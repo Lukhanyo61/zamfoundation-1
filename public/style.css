@@ -1,0 +1,870 @@
+
+:root {
+  --hs: 225, 100%;
+  --paper: hsl(var(--hs), 25%);
+  --highlight: hsl(var(--hs), 45%);
+  --shadow: hsl(var(--hs), 15%);
+}
+
+
+
+.container{
+    margin-top:100px;
+}
+
+.counter-box {
+	display: block;
+	background: #0F0844;
+	padding: 40px 20px 37px;
+	text-align: center
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: white;
+	font-size: 18px;
+	font-weight: 500
+}
+
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color:white;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: rgb(227, 23, 84);
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+
+
+label{
+  color: #ff3666;
+}
+.footer {
+    background: rgb(227, 23, 84);
+    padding-top: 80px;
+    margin-top: 100px;
+    
+    }
+    /*END FOOTER SOCIAL DESIGN*/
+    
+    @media only screen and (max-width:768px) { 
+    .single_footer{margin-bottom:30px;}
+    }
+    .single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    }
+    .single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+    }
+    .single_footer p{color:#fff;}
+    .single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    .single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+    }
+    .single_footer ul li a:hover { color: #ff3666; }
+    
+    
+    .single_footer_address ul li{color:#fff;}
+    .single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+    }
+    .contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /*START NEWSLETTER CSS*/
+    .subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    }
+    .subscribe__input {
+    background-color: #fff;
+    border: medium none;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 60px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0 150px 0 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    }
+    @media only screen and (max-width:768px) { 
+    .subscribe__input{padding: 0 50px 0 20px;}
+    }
+    
+    .subscribe__btn {
+    background-color: transparent;
+    border-radius: 0 25px 25px 0;
+    color: #01c7e9;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    }
+    .subscribe__btn i{transition: all 0.3s ease 0s;}
+    @media only screen and (max-width:768px) { 
+    .subscribe__btn{right:0px;}
+    }
+    
+    .subscribe__btn:hover i{
+    color:#ff3666;
+    }
+    button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    }
+    /*END NEWSLETTER CSS*/
+    
+    /*START SOCIAL PROFILE CSS*/
+    .social_profile {margin-top:40px;}
+    .social_profile ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    }
+    .social_profile ul li{float:left;}
+    .social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.2);
+    }
+    @media only screen and (max-width:768px) { 
+    .social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+    }
+    @media only screen and (max-width:480px) { 
+    .social_profile ul li a{
+    width:40px;
+    height:40px;
+    line-height:40px;
+	position: relative; left: 90px;
+    }
+    }
+    .social_profile ul li a:hover{
+    background:#0F0844;
+    border: 2px solid #fff;
+    color:#fff;
+    border:0px;
+    }
+    /*END SOCIAL PROFILE CSS*/
+    .copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color:#fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+    }
+    .copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+    .copyright a:hover{color:#ff3666;}
+    
+    #star{
+      height: 600px;
+      width: 350px;
+    }
+    
+	@media screen and (max-width: 430px) {
+		#star{
+		  margin-left: 100px;
+      width: 200px;
+		}
+	  }
+
+    @media screen and (max-width: 410px) {
+      .col-md-8 {
+        margin-top: 50px;
+        margin-left: -100px;
+      }
+      }
+
+      
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control, 
+textarea {
+  max-width: 400px;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: transparent;
+  border: solid 1px white;
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+
+
+.social-media-list li:hover {
+  background-color: #000077; 
+  color: #000077;
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: #fff;
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  }
+
+  @media screen and (max-width: 410px) {
+    #banner {
+      margin-top: 0px;
+      
+    }
+    }
+    #prev{
+      
+      position: relative; top: 300px; left: -530px;
+    }
+    #next{
+      
+      position: relative; top: 300px; left: 530px;
+    }
+
+    @media screen and (max-width: 425px) {
+      #star{
+        position: relative; left: -090px;
+        
+      }
+      }
+      @media screen and (max-width: 410px) {
+        #next{
+          position: relative; left: -1200px;
+          
+        }
+        }
+        .contact-form{
+          background: #fff;
+          margin-top: 10%;
+          margin-bottom: 5%;
+          width: 70%;
+      }
+      .contact-form .form-control{
+          border-radius:1rem;
+      }
+      .contact-image{
+          text-align: center;
+      }
+      .contact-image img{
+          border-radius: 6rem;
+          width: 12%;
+          margin-top: -3%;
+          transform: rotate(360deg);
+      }
+      .contact-form form{
+          padding: 14%;
+      }
+      .contact-form form .row{
+          margin-bottom: -7%;
+      }
+      .contact-form h3{
+          margin-bottom: 8%;
+          margin-top: -10%;
+          text-align: center;
+          color: #dc3545;
+      }
+      .contact-form .btnContact {
+          width: 50%;
+          border: none;
+          border-radius: 1rem;
+          padding: 1.5%;
+          background: #dc3545;
+          font-weight: 600;
+          color: #fff;
+          cursor: pointer;
+      }
+      .btnContactSubmit
+      {
+          width: 50%;
+          border-radius: 1rem;
+          padding: 1.5%;
+          color: #fff;
+          background-color: #0062cc;
+          border: none;
+          cursor: pointer;
+      }
+      @media screen and (max-width: 410px) {
+        .contact-form .btnContact{
+          position: relative; top: 160px;
+          width: 140px;
+          
+        }
+        }
+        @media screen and (max-width: 425px) {
+          .contact-form .btnContact{
+            position: relative; top: 160px;
+            width: 140px;
+            
+          }
+          }
+        @media screen and (max-width: 410px) {
+          #text-area{
+            position: relative; top: -45px;
+            
+          }
+          }
+
+          #rotate {
+            animation: rotation 8s infinite linear;
+          }
+          
+          @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(359deg);
+            }
+          }
+          input{
+            border: solid 2px red;
+          }
+          @media screen and (max-width: 410px) {
+            #btn-buck{
+              position: relative; top: -45px;
+              
+            }
+            }
+            @media screen and (max-width: 320px) {
+              #banner{
+                margin-top: 2px;                
+              }
+              }
+              @media screen and (max-width: 375px) {
+                #banner{
+                  background-color: #0062cc;              
+                }
+                }
+          
+
+                @media screen and (max-width: 410px) {
+                  #latest{
+                    width: 320px;
+                    
+                  }
+                  }
+
+                  @media screen and (max-width: 410px) {
+                    #our{
+                      width: 420px;
+                      font-size: 50px;
+                      margin-left: -20px;
+                      
+                    }
+                    }
+                    @media screen and (max-width: 410px) {
+                      #card5{
+                       
+                       position: relative; top:90px;
+                      }
+                      }
+                      @media screen and (max-width: 410px) {
+                        .card{
+                         
+                         position: relative; top: 40px; left: -0px;
+                        }
+                        }
+                        @media screen and (max-width: 1024px) {
+                          #latest{
+                           
+                           position: relative; top: -290px; left: 200px;
+                           width: 500px;
+                          }
+                          }
+
+                          @media screen and (max-width: 1024px) {
+                            #our{
+                             
+                             position: relative; top: -350px; left: 200px;
+                             width: 700px;
+                            }
+                            }
+                            @media screen and (max-width: 1024px) {
+                            .footer{
+                               
+                               position: relative; top: px;
+                               width: 100%;
+                              }
+                              }
+
+                              @media screen and (max-width: 410px) {
+                                #zam-body{
+                                   
+                                   position: relative; left: 100px;
+                                  
+                                  }
+                                  }
+                                  @media screen and (max-width: 410px) {
+                                    #zam-gov{
+                                       
+                                       position: relative; left: 100px;
+                                      
+                                      }
+                                      }
+                                      @media screen and (max-width: 410px) {
+                                        .what{
+                                           
+                                           position: relative; top: -120px;
+                                          
+                                          }
+                                          } @media screen and (max-width: 410px) {
+                                            .ourVision{
+                                               
+                                               position: relative; top: 60px;
+                                              
+                                              }
+                                              }
+                                              @media screen and (max-width: 410px) {
+                                                .forWho{
+                                                   
+                                                   position: relative; top: 50px;
+                                                  
+                                                  }
+                                                  }
+                                                  @media screen and (max-width: 410px) {
+                                                    .ourMission{
+                                                       
+                                                       position: relative; top: -80px;
+                                                      
+                                                      }
+                                                      }
+                                                      @media screen and (max-width: 410px) {
+                                                        #card5{
+                                                           
+                                                           margin-top: -160px;
+                                                          
+                                                          }
+                                                          }
+                                                          @media screen and (max-width: 410px) {
+                                                            .card5{
+                                                               
+                                                               margin-top: -30px;
+                                                              
+                                                              }
+                                                              }
+                                                          @media screen and (max-width: 410px) {
+                                                            .crd-Body{
+                                                               
+                                                              margin-left: 100px;
+                                                              width: 100%;
+                                                              
+                                                              }
+                                                              }
+                                                              @media screen and (max-width: 410px) {
+                                                                .banner{
+                                                                   
+                                                               margin-top: -100px;
+                                                                  
+                                                                  }
+                                                                  }
+
+                                                              @media screen and (max-width: 410px) {
+                                                                .star{
+                                                                   
+                                                               margin-top: -30px;                                                                  
+                                                                  }
+                                                                  }
+                                                                  @media screen and (max-width: 425px) {
+                                                                    .nav-logo{
+                                                                       
+                                                                   width: 40px ;
+                                                                   height: 40px;
+                                                                   margin-left: 100px;
+                                                                   animation: rotation 8s infinite linear;
+                                                                  
+                                                                    }
+                                                                 
+                                                                      }
+                                                                       @keyframes rotation {
+                                                                    from {
+                                                                      transform: rotate(0deg);
+                                                                    }
+                                                                    to {
+                                                                      transform: rotate(359deg);
+                                                                    }
+                                                                  }
+
+                                                                  @media screen and (max-width: 410px) {
+                                                                    .zim{
+                                                                       
+                                                                   margin-top: 0px;
+                                                                      
+                                                                      }
+                                                                      }
+                                                                      @media screen and (max-width: 410px) {
+                                                                        .tainer{
+                                                                           
+                                                                       margin-top: -100px;
+                                                                          
+                                                                          }
+                                                                          }
+
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd8{
+                                                                         margin-top: 10px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                              
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd7{
+                                                                         margin-top: 10px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                              
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd6{
+                                                                         margin-top: -10px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                              
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd5{
+                                                                         margin-top: -90px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                              
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd4{
+                                                                         margin-top: 10px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                              
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd3{
+                                                                         margin-top: 10px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                              
+                                                                          @media screen and (max-width: 410px) {
+                                                                            .crd2{
+                                                                         margin-top: 10px;
+                                                                              
+                                                                              }
+                                                                              }
+                                                                  
+                                                                                                                        
+                                                                      
+
+                                                                              #container {
+                                                                                width: 650px;
+                                                                                padding: 10px;
+                                                                                margin: 0 auto;
+                                                                              }
+                                                                              
+                                                                              h1,
+                                                                              h2 {
+                                                                                color: #2B292E
+                                                                              }
+                                                                              
+                                                                              input {
+                                                                                border: 1px solid #333;
+                                                                                margin-bottom: 15px;
+                                                                                min-width: 250px;
+                                                                                padding: 8px;
+                                                                              }
+                                                                              
+                                                                              .button {
+                                                                                transition-duration: 0.4s;
+                                                                                background: #720000;
+                                                                                border: none;
+                                                                                color: white;
+                                                                                padding: 10px 20px;
+                                                                                display: block;
+                                                                                font-size: 16px;
+                                                                                margin: 10px 2px;
+                                                                                cursor: pointer;
+                                                                              }
+                                                                              
+                                                                              button.button:hover {
+                                                                                background: #990000
+                                                                              }
+                                                                              
+                                                                              #cboxLoadedContent {
+                                                                                padding: 10px;
+                                                                                background: #fffff0;
+                                                                              }
+                                                                              
+                                                                              #modal-content {
+                                                                                display: none;
+                                                                              }
+                                                                              
+                                                                              #modal-content label {
+                                                                                display: block;
+                                                                                margin-bottom: 5px;
+                                                                              }
+                                                                              
+                                                                              #modal-content input {
+                                                                                width: 95%;
+                                                                              }
+
+                                                                              
+
+                                                                              

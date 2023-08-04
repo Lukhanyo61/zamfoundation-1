@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <%- include('nav') %>
+
+  <!-- Carousel wrapper -->
+  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="Sunset Over the City" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="Canyon at Nigh" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="Cliff Above a Stormy Sea" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Administration Login</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form1Example1" class="form-control" />
+              <label class="form-label" for="form1Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form1Example2" class="form-control" />
+              <label class="form-label" for="form1Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="/admin/startbootstrap-sb-admin-2-gh-pages/forgot-password.html">Forgot password?</a>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <a href="/admin/startbootstrap-sb-admin-2-gh-pages/index.html">
+              <button href="/admin/startbootstrap-sb-admin-2-gh-pages/index.html" class="btn btn-primary btn-block">Sign in</button></a>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <h1 id="pay" style="margin-top: 60px;" class="text-center">Paying it Forward</h1>
+  <div style="margin-top: 100px;" class="container what">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="card  ">
+          <div class="card-body">
+            <h5 class="card-title">What we do</h5>
+            <p class="card-text">
+              We provide access to learner's and driver's license training for youths from disadvantaged communities in order to enhance their chances of employment.
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div style="height: 180px;" class="card forWho  ">
+          <div class="card-body">
+            <h5 class="card-title">For Who</h5>
+            <p class="card-text">
+              The foundation focuses on young people who are 25 years and younger, who either have matric or are in the process of obtaining one.
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card ourVision  ">
+          <div class="card-body">
+            <h5 class="card-title">Our Vision</h5>
+            <p class="card-text">
+
+              Our Vision:
+              To assist in the development of young people from disadvantaged backgrounds by providing access to necessary skills, development and promote education.
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div style="margin-top: 30px;" class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="card ourMission ">
+          <div class="card-body">
+            <h5 class="card-title">Our Mission</h5>
+            <p class="card-text">
+
+
+              To provide a vehicle through which young people from disadvantaged backgrounds can be assisted to acquire skills that are necessary for employment seeking.
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div id="card5" style="height: 183px;" class="card ourObjective">
+          <div class="card-body">
+            <h5 class="card-title">Our Objective</h5>
+            <p class="card-text">
+
+
+              To provide disadvantaged youths access towards obtaining their learners and drivers
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="four col-md-3">
+        <div class="counter-box colored">
+
+          <span class="counter">2147</span>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+      <div class="four col-md-3">
+        <div class="counter-box">
+
+          <span class="counter">3275</span>
+          <p>Registered Members</p>
+        </div>
+      </div>
+      <div class="four col-md-3">
+        <div class="counter-box">
+
+          <span class="counter">289</span>
+          <p>Available Products</p>
+        </div>
+      </div>
+      <div class="four col-md-3">
+        <div style="height: 140px;" class="counter-box">
+
+          <span class="counter">1563</span>
+          <p>Saved Trees</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container card5">
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://zamfoundation.co.za/wp-content/uploads/2021/03/Congra.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+          </div>
+          <div class="col-md-8">
+            <div style="margin-top: 100px;" id="zam-body" class="card-body">
+              <h2 style="	font-family: 'Niconne', cursive;" data-text="CSS" class="card-title"><span>Our latest star!</span></h2>
+              <p sty class="card-text">
+                The foundation congratulates Noloyiso Madolo, 2019 beneficiary, on obtaining her code 10 drivers license. Her story is inspirational because after obtaining her learners license thru ZAM Foundation she didn’t sit around waiting for a handout. Instead she hustled and managed to pay for her own driving lessons. Against all odds she made it. A true story of self-reliance. No handouts, just hand ups. Well done Noloyiso.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <%- include('footer') %>
+
+
+
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+</body>
+
+</html>
