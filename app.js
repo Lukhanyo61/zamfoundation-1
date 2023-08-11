@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const { MongoClient } = require('mongodb');
 const mongoose = require('mongoose');
 const app = express();
-const port = 3004;
+const port = 3000;
 
 // MongoDB Atlas connection settings
 mongoose.connect('mongodb+srv://shawn1080444:x8FVoW53VDBCO7H4@cluster1.np9fyen.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
