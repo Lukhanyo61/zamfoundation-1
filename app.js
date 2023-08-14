@@ -85,6 +85,15 @@ app.post('/dashboard', async(req, res) => {
     res.status(401).send('Invalid credentials. Please try again.');
   }
 });
+app.get('/subscribers', async (req,res)=> {
+  await client.connect();
+  const collection = client.db('test').collection('subscribers');
+  const data = await collection.find({}).toArray();
+
+  res.render('subscribers', {data : data })
+})
+
+
 
 app.post('/Contact', (req, res) => {
   const name = req.body.name;
