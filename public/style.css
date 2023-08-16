@@ -9,7 +9,7 @@
 
 
 .container{
-    margin-top:100px;
+    margin-top:30px;
 }
 
 .counter-box {
@@ -17,6 +17,20 @@
 	background: #0F0844;
 	padding: 40px 20px 37px;
 	text-align: center
+}
+
+@media screen and (max-width:780px) {
+  .countwer-box{
+    padding-top: 20%;
+  }
+  .card-bodu{
+    padding-bottom: 5%;
+  }
+  .courosell{
+    padding-bottom: 10%;
+  }
+
+
 }
 
 .counter-box p {
@@ -537,10 +551,9 @@ hr {
         }
         }
         .contact-form{
-          background: #fff;
           margin-top: 10%;
           margin-bottom: 5%;
-          width: 70%;
+          width: 80%;
       }
       .contact-form .form-control{
           border-radius:1rem;
@@ -555,7 +568,7 @@ hr {
           transform: rotate(360deg);
       }
       .contact-form form{
-          padding: 14%;
+          padding-top: 14%;
       }
       .contact-form form .row{
           margin-bottom: -7%;
@@ -595,7 +608,7 @@ hr {
         }
         @media screen and (max-width: 425px) {
           .contact-form .btnContact{
-            position: relative; top: 160px;
+            position: relative; top: 210px;
             width: 140px;
             
           }
@@ -753,13 +766,13 @@ hr {
                                                               
                                                               }
                                                               }
-                                                              @media screen and (max-width: 410px) {
+                                                              /* @media screen and (max-width: 410px) {
                                                                 .banner{
                                                                    
-                                                               margin-top: -100px;
+                                                               margin-top: 10%;
                                                                   
                                                                   }
-                                                                  }
+                                                                  } */
 
                                                               @media screen and (max-width: 410px) {
                                                                 .star{

@@ -38,9 +38,19 @@ const subscriberSchema = new mongoose.Schema({
   message: {type:String}
 
 });
+
+const beneficiariesSchema = new mongoose.Schema({
+  name : { type : String},
+  surname : {type : String},
+  address : {type : String},
+  numbers : { type : String},
+  id_number : {type : Number},
+  grade : {type : Number},
+  message : {type : String}
+})
 const Subscriber = mongoose.model('Subscribers', subscriberSchema);
 const ContactUs= mongoose.model('ContactUs', subscriberSchema);
-
+const Beneficiary = mongoose.model('Beneficiary', beneficiariesSchema )
 
 app.get('/', (req,res)=> {
     res.render('index');
@@ -52,13 +62,37 @@ app.get('/about', (req,res)=> {
 app.get('/beneficiaries', (req,res)=> {
     res.render('beneficiaries');
 })
+app.post('/beneficiaries', (req, res) => {
+  const name = req.body.name;
+  const surname = req.body.surname;
+  const address = req.body.address;
+  const id_number = req.body.idnum;
+  const numbers = req.body.numbers;
+  const grade = req.body.grade;
+  const message = req.body.motivation;
+  // Create a new Subscriber document
+  const beneficiaries = new Beneficiary({ name,surname,address, id_number, numbers, grade, message});
+  // Save the subscriber to the database
+  beneficiaries.save()
+  .then(() => {
+    res.send('Thank you ' + name + ' for applying as our beneficiary, we\'ll get back to you shortly!');
+  })
+  .catch((err) => {
+    console.error(err);
+    res.send('An error occurred while saving the Subscribers.');
+  });
+
+});
+app.get('/contact', (req,res)=> {
+  res.render('contact');
+})
+
+
 app.get('/login', (req,res)=> {
   res.render('log');
 })
 
-app.get('/contact', (req,res)=> {
-    res.render('contact');
-})
+
 
 app.post('/dashboard', async(req, res) => {
   const { username, password, email } = req.body;
@@ -85,6 +119,26 @@ app.post('/dashboard', async(req, res) => {
     res.status(401).send('Invalid credentials. Please try again.');
   }
 });
+app.get('/contact-us', async (req, res)=> {
+  try {
+    await client.connect();
+    const collection = client.db('test').collection('subscribers');
+    const data = await collection.find({}).toArray();
+
+    const secondCons = client.db('test').collection('contactus');
+    const secondData = await secondCons.find({}).toArray();
+    res.render('contactus', { data: data, secondData: secondData });
+    
+  } catch (err) {
+    console.error('Failed to retrieve data from MongoDB:', err);
+    res.status(500).send('Failed to retrieve data from MongoDB');
+  } finally {
+    await client.close();
+  }
+
+  // Check if entered credentials match the valid user
+  })
+  
 app.get('/subscribers', async (req,res)=> {
   await client.connect();
   const collection = client.db('test').collection('subscribers');
@@ -93,6 +147,13 @@ app.get('/subscribers', async (req,res)=> {
   res.render('subscribers', {data : data })
 })
 
+app.get('/nominee', async (req, res)=> {
+  await client.connect();
+  const collectData = client.db('test').collection('beneficiaries');
+  const data = await collectData.find({}).toArray();
+
+  res.render('nominees', {data : data} )
+})
 
 
 app.post('/Contact', (req, res) => {
@@ -113,6 +174,8 @@ app.post('/Contact', (req, res) => {
   });
 
 });
+
+
 
   // Handle form submission
   app.post('/subscribe', (req, res) => {
