@@ -15,7 +15,7 @@ const db = mongoose.connection;
 const validUser = {
   username: 'zimkhitha',
   email: 'zam@zam.com',
-  password: 'Zam123',
+  password: 'zam123',
 };
 
 app.set('view engine', 'ejs');
