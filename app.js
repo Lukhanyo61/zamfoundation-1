@@ -13,9 +13,9 @@ const client = new MongoClient(mongoURI, { useNewUrlParser: true, useUnifiedTopo
 const db = mongoose.connection;
 
 const validUser = {
-  username: 'user123',
-  email: 'mzwa@gmail.com',
-  password: '123',
+  username: 'zimkhitha',
+  email: 'zam@zam.com',
+  password: 'Zam123',
 };
 
 app.set('view engine', 'ejs');
