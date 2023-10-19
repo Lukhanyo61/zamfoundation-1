@@ -1494,4 +1494,33 @@ hr {
                                                                               .card mb-3{
                                                                                 margin-top: -140px;
                                                                               }
-                                                                              
+                                                                              @media screen and (min-width: 1023px){
+                                                                                #Nomf{
+                                                                                  height: 100px;
+                                                                                }
+                                                                                #jar{
+                                                                                  height: 200px;
+                                                                                }
+                                                                                }
+                                                                                @media screen and (max-width: 320px) {
+                                                                                  #cardA {
+                                                                                    position: relative;
+                                                                                    top: -80px;
+                                                                                   
+                                                                                  }
+                                                                                  #cardB {
+                                                                                    position: relative;
+                                                                                    top: -70px;
+                                                                                   
+                                                                                  }
+                                                                                  #cardC {
+                                                                                    position: relative;
+                                                                                    top: -60px;
+                                                                                   
+                                                                                  }
+                                                                                  #cardD {
+                                                                                    position: relative;
+                                                                                    top: -50px;
+                                                                                   
+                                                                                  }
+                                                                                }

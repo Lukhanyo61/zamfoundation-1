@@ -38,22 +38,19 @@ body {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   }
 
-  @media screen and (max-width: 1024px){
-    #nme7{
-      
-      margin-top: -15%;
-    }
-    #cont2{
+  @media screen and (min-width: 1023px){
+  #Nomf{
+    height: 100px;
+  }
+  #jar{
+    height: 200px;
+  }
+  }
+
+  @media screen and (max-width: 320px) {
+    #cardA {
       position: relative;
-      top: -35px;
-    }
-    #cimg{
-      height: 650px;  
-    }
-    #picN{
-      height: 215px;
-    }
-    .footer{
-      margin-top: -2%;
+      top: 30px;
+     
     }
   }
