@@ -37,3 +37,23 @@ body {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   }
+
+  @media screen and (max-width: 1024px){
+    #nme7{
+      
+      margin-top: -15%;
+    }
+    #cont2{
+      position: relative;
+      top: -35px;
+    }
+    #cimg{
+      height: 650px;  
+    }
+    #picN{
+      height: 215px;
+    }
+    .footer{
+      margin-top: -2%;
+    }
+  }
