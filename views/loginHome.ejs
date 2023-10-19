@@ -46,19 +46,17 @@
   <header>
     <!-- Sidebar -->
     <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-      <div class="navbar-brand">
-        <img width="100px" style="margin-left: 30%; margin-top: 10%;" src="https://zamfoundation1.netlify.app/logo-pink.png" alt="">
-      </div>
-      <div class="position-sticky">
+      
+      <div style="margin-top: 100px;" class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-            <i class="fas  fa-fw me-3"></i><span>Main dashboard</span>
+          <a href="/contact-us" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+            <i class="fas  fa-fw me-3"></i><span>Contactors</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple ">
-            <i class="fas  fa-fw me-3"></i><span>Webiste traffic</span>
+          <a href="/subscribers" class="list-group-item list-group-item-action py-2 ripple ">
+            <i class="fas  fa-fw me-3"></i><span>Subscribers</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple ">
-            <i class="fas f fa-fw me-3"></i><span>Webiste traffic</span>
+          <a href="/nominee" class="list-group-item list-group-item-action py-2 ripple ">
+            <i class="fas f fa-fw me-3"></i><span>Nominees</span>
           </a>
 
         </div>
@@ -76,17 +74,12 @@
         </button>
 
         <!-- Brand -->
-        <a class="navbar-brand" href="#">
-          <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="25" alt="MDB Logo" loading="lazy" />
+        <a class="navbar-brand" href="/views/index.ejs">
+          <img src="https://zamfoundation1.netlify.app/logo-pink.png" height="75" alt="MDB Logo" loading="lazy" />
         </a>
 
 
-        <!-- Avatar -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" height="22" alt="Avatar" loading="lazy" />
-          </a>
-        </li>
+       
 
       </div>
       <!-- Container wrapper -->
@@ -116,14 +109,7 @@
         </thead>
         <tbody id="myTable">
           <tr>
-            <% for (var i = 0; i < secondData.length; i++) { %>
-          <tr>
-            <td><%= secondData[i].name %></td>
-            <td><%- secondData[i].number %> </td>
-            <td><%= secondData[i].email %></td>
-            <td><%= secondData[i].message %></td>
-
-          </tr>
+           
           <% } %>
           </tr>
 

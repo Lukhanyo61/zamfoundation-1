@@ -1502,6 +1502,13 @@ hr {
                                                                                   height: 200px;
                                                                                 }
                                                                                 }
+                                                                                @media screen and (max-width: 410px) {
+                                                                                  #zam-body{
+                                                                                     
+                                                                                     position: relative; left: 100px;
+                                                                                    
+                                                                                    }
+                                                                                    } 
                                                                                 @media screen and (max-width: 320px) {
                                                                                   #cardA {
                                                                                     position: relative;
@@ -1524,3 +1531,26 @@ hr {
                                                                                    
                                                                                   }
                                                                                 }
+                                                                                @media screen and (max-width: 410px) {
+                                                                                  #adcard{
+                                                                                     
+                                                                                     margin-top: -30px;
+                                                                                    
+                                                                                    }
+                                                                                    } 
+                                                                                    @media screen and (max-width: 410px) {
+                                                                                      #adcard2{
+                                                                                         
+                                                                                         margin-top: 10px;
+                                                                                        
+                                                                                        }
+                                                                                        } 
+                                                                                        @media screen and (max-width: 410px) {
+                                                                                          #adcard3{
+                                                                                             
+                                                                                             margin-top: 10px;
+                                                                                            
+                                                                                            }
+                                                                                            } 
+                                                                                    
+                                                                                
